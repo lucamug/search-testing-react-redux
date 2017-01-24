@@ -11,4 +11,8 @@ To install the test just clone the repo then run
 
 Then point the browser to http://localhost:3000/
 
+This is a page with a similar functionality that I made in vanilla JS: http://www.rakuten.co.uk/?filter
+
+![Screenshot](https://4.bp.blogspot.com/-Mh6Q502ebCU/WIfUvWQ5tYI/AAAAAAAAFn0/9jbFrLRZSawgmsp-HqiXZQ_ZTmw6Aw9hQCK4B/s640/search1.png)
+
 The test is based on http://jpsierens.com/tutorial-react-redux-webpack/
