@@ -1,6 +1,4 @@
-# search-testing-react-redux
-
-Simple search engine test in React-Redux
+# Simple search engine test in React-Redux
 
 ![Screenshot](https://4.bp.blogspot.com/-BKt0gk_dYfE/WIfVtezpauI/AAAAAAAAFn8/AkF62Xmd9ok--826NGmfaHHXO1ljWfVrwCK4B/s1600/search2.png)
 
