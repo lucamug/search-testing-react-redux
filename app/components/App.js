@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { footer } from '../styles/footer.scss';
+import { footer } from '../styles/footer.sass';
 const App = ({ children }) =>
     <div>
         { children }
