@@ -19,132 +19,25 @@ const products = [
 	{ name: 'Molton Brown' },
 	{ name: 'Wordery' },
 	{ name: 'Cath Kidston' },
-	{ name: 'Hotels.com' },
-	{ name: 'HMV' },
-	{ name: 'UKSoccershop' },
-	{ name: 'Moss Bros' },
-	{ name: 'Goldsmiths' },
-	{ name: 'East' },
-	{ name: 'PC World' },
-	{ name: 'Gameseek' },
-	{ name: 'Zoom.co.uk' },
-	{ name: 'Simply Home Entertainment' },
-	{ name: 'Simply Games' },
-	{ name: 'AliExpress' },
-	{ name: 'Hobbycraft' },
-	{ name: 'The Entertainer' },
-	{ name: 'LEGO' },
-	{ name: 'Made.com' },
-	{ name: 'Domu' },
-	{ name: 'Swoon Editions' },
-	{ name: 'The White Company' },
-	{ name: 'Urbanara' },
-	{ name: 'Amara' },
-	{ name: 'B&Q' },
-	{ name: 'Pets at Home' },
-	{ name: 'Wickes' },
-	{ name: 'wilko.com' },
-	{ name: 'Screwfix' },
-	{ name: 'Worldstores' },
-	{ name: 'ScS' },
-	{ name: 'Clas Ohlson' },
-	{ name: 'TK Maxx' },
-	{ name: 'FCUK' },
-	{ name: 'Tokyo Laundry' },
-	{ name: 'Monsoon' },
-	{ name: 'Figleaves' },
-	{ name: 'Ben Sherman' },
-	{ name: 'Ralph Lauren' },
-	{ name: 'La Redoute' },
-	{ name: 'The Idle Man' },
-	{ name: 'Burton' },
-	{ name: 'usc.co.uk' },
-	{ name: 'M&Co' },
-	{ name: 'Reiss' },
-	{ name: 'Pandora' },
-	{ name: 'H Samuel' },
-	{ name: 'Ernest Jones' },
-	{ name: 'Sunglasses Shop' },
-	{ name: 'Schuh' },
-	{ name: 'OFFICE' },
-	{ name: 'Footasylum' },
-	{ name: 'Ugg' },
-	{ name: 'New Balance' },
-	{ name: 'Dickies' },
-	{ name: 'GHD' },
-	{ name: 'Dell' },
-	{ name: 'Dyson' },
-	{ name: 'MyMemory' },
-	{ name: 'BT Shop' },
-	{ name: 'Carphone Warehouse' },
-	{ name: 'PRC Direct' },
-	{ name: 'Gtech.co.uk' },
-	{ name: 'PC World Business' },
-	{ name: 'Foreo' },
-	{ name: 'Birchbox' },
-	{ name: 'Cowshed' },
-	{ name: 'Lookfantastic' },
-	{ name: 'Smashbox' },
-	{ name: 'Mankind' },
-	{ name: 'Holland and Barrett' },
-	{ name: 'Space NK' },
-	{ name: 'Estee Lauder' },
-	{ name: 'Benefit Cosmetics' },
-	{ name: 'Ticketmaster' },
-	{ name: 'ATG Tickets' },
-	{ name: 'Expedia.co.uk' },
-	{ name: 'The Ticket Factory' },
-	{ name: 'LOVETheatre' },
-	{ name: 'National Express' },
-	{ name: 'lastminute.com' },
-	{ name: 'Radisson Blu' },
-	{ name: 'Umbro' },
-	{ name: 'Under Armour' },
-	{ name: 'Saucony' },
-	{ name: 'Sweaty Betty' },
-	{ name: 'All Outdoor' },
-	{ name: 'MyProtein' },
-	{ name: 'Buyagift' },
-	{ name: 'Whittard of Chelsea' },
-	{ name: 'Twinings Teashop' },
-	{ name: 'Royal Academy of Arts' },
-	{ name: 'Organic Wine Club' },
-	{ name: 'Cadbury Gifts Direct' },
-	{ name: 'Printerpix' },
-	{ name: 'AVG' },
-	{ name: 'Symantec' },
-	{ name: 'Which.co.uk' },
-	{ name: 'Confused.com' },
-	{ name: 'Just Eat' },
-	{ name: 'Kellyhoppen' },
-	{ name: 'Radley' },
-	{ name: 'Peacocks' },
-	{ name: 'Crocs' },
-	{ name: 'Miss Selfridge' },
-	{ name: 'Missguided' },
-	{ name: 'Jack Wills' },
-	{ name: 'AllPosters.co.uk' },
-	{ name: 'DC Thomson Shop' },
-	{ name: 'Scribbler' },
+	{ name: 'Hotels.com' }
 ];
 
 const ProductTable = ({ filter }) => {
-    let rows = [];
-    products.forEach((p) => {
-        const nameLC = p.name.toLowerCase();
-        const filterLC = filter.toLowerCase();
-        if (nameLC.indexOf(filterLC) !== -1) {
-            rows.push(
-                <ProductRow key={p.name} data={p} />
-            );
-        }
-    });
-
-    return <div> {rows} </div>;
+	let rows = [];
+	products.forEach((p) => {
+		const nameLC = p.name.toLowerCase();
+		const filterLC = filter.toLowerCase();
+		if (nameLC.indexOf(filterLC) !== -1) {
+			rows.push(
+				<ProductRow key={p.name} data={p} />
+			);
+		}
+	});
+	return <div> {rows} </div>;
 };
 
 ProductTable.propTypes = {
-    filter: PropTypes.string
+	filter: PropTypes.string
 };
 
 export default ProductTable;
