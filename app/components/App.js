@@ -3,7 +3,9 @@ import { footer } from '../styles/footer.sass';
 const App = ({ children }) =>
     <div>
         { children }
+        ciao
         <footer className={footer}>
+          ff
         </footer>
     </div>;
 
