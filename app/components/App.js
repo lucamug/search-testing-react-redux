@@ -5,7 +5,6 @@ const App = ({ children }) =>
         { children }
         ciao
         <footer className={footer}>
-          ff
         </footer>
     </div>;
 
