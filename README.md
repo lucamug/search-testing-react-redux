@@ -15,4 +15,4 @@ This is a page with a similar functionality that I made in vanilla JS: http://ww
 
 ![Screenshot](https://4.bp.blogspot.com/-Mh6Q502ebCU/WIfUvWQ5tYI/AAAAAAAAFn0/9jbFrLRZSawgmsp-HqiXZQ_ZTmw6Aw9hQCK4B/s1600/search1.png)
 
-The test is based on http://jpsierens.com/tutorial-react-redux-webpack/
+The test is based on http://jpsierens.com/tutorial-react-redux-webpack/, https://github.com/jpsierens/webpack-react-redux-react-router
